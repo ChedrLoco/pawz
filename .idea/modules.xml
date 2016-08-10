@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pawz.iml" filepath="$PROJECT_DIR$/.idea/modules/pawz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pawz_main.iml" filepath="$PROJECT_DIR$/.idea/modules/pawz_main.iml" group="pawz" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pawz_test.iml" filepath="$PROJECT_DIR$/.idea/modules/pawz_test.iml" group="pawz" />
+    </modules>
+  </component>
+</project>
