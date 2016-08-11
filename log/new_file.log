@@ -1,0 +1,90 @@
+/usr/local/mysql/bin/mysqld, Version: 5.7.14 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2016-08-11T18:46:45.269995Z	  124 Connect	root@localhost on paws using TCP/IP
+2016-08-11T18:46:45.274382Z	  124 Query	/* mysql-connector-java-6.0.3 ( Revision: 9fb85a76ccb7506157e668f1516464a46e317d4a ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@tx_isolation AS tx_isolation, @@wait_timeout AS wait_timeout
+2016-08-11T18:46:45.286309Z	  124 Query	SET NAMES latin1
+2016-08-11T18:46:45.286505Z	  124 Query	SET character_set_results = NULL
+2016-08-11T18:46:45.286773Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.287422Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.310963Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.346848Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.693719Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.693932Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.717400Z	  124 Query	TRUNCATE TABLE animals
+2016-08-11T18:46:45.723480Z	  124 Query	commit
+2016-08-11T18:46:45.723665Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.726562Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.726724Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.740707Z	  124 Query	insert into animals (name, placementDate, sex, shelter_id, species) values ('Sprinkles', '2013-02-11', 'F', null, 'Cat')
+2016-08-11T18:46:45.744486Z	  124 Query	commit
+2016-08-11T18:46:45.744875Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.748700Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.749773Z	  124 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:46:45.754987Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.755813Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.756197Z	  124 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:46:45.756930Z	  124 Query	SET autocommit=1
+2016-08-11T18:46:45.757124Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.757262Z	  124 Query	SET autocommit=0
+2016-08-11T18:46:45.764573Z	  124 Query	delete from animals where id=1
+2016-08-11T18:46:45.765162Z	  124 Query	commit
+2016-08-11T18:46:45.766957Z	  124 Query	SET autocommit=1
+2016-08-11T18:48:06.606177Z	  125 Connect	root@localhost on paws using TCP/IP
+2016-08-11T18:48:06.610442Z	  125 Query	/* mysql-connector-java-6.0.3 ( Revision: 9fb85a76ccb7506157e668f1516464a46e317d4a ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@tx_isolation AS tx_isolation, @@wait_timeout AS wait_timeout
+2016-08-11T18:48:06.623926Z	  125 Query	SET NAMES latin1
+2016-08-11T18:48:06.624141Z	  125 Query	SET character_set_results = NULL
+2016-08-11T18:48:06.624451Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:06.625359Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:06.650306Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:06.687872Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:07.023845Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.024054Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.046753Z	  125 Query	TRUNCATE TABLE animals
+2016-08-11T18:48:07.052267Z	  125 Query	commit
+2016-08-11T18:48:07.052492Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:07.055356Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.055503Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.072329Z	  125 Query	insert into animals (name, placementDate, sex, shelter_id, species) values ('Sprinkles', '2013-02-11', 'F', null, 'Cat')
+2016-08-11T18:48:07.076165Z	  125 Query	commit
+2016-08-11T18:48:07.076553Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:07.080343Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.081356Z	  125 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:48:07.087077Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:07.087977Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.088429Z	  125 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:48:07.089524Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:07.089715Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.089855Z	  125 Query	SET autocommit=0
+2016-08-11T18:48:07.096322Z	  125 Query	delete from animals where id=1
+2016-08-11T18:48:07.096888Z	  125 Query	commit
+2016-08-11T18:48:07.098473Z	  125 Query	SET autocommit=1
+2016-08-11T18:48:13.920257Z	  126 Connect	root@localhost on paws using TCP/IP
+2016-08-11T18:48:13.925158Z	  126 Query	/* mysql-connector-java-6.0.3 ( Revision: 9fb85a76ccb7506157e668f1516464a46e317d4a ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@tx_isolation AS tx_isolation, @@wait_timeout AS wait_timeout
+2016-08-11T18:48:13.937702Z	  126 Query	SET NAMES latin1
+2016-08-11T18:48:13.937950Z	  126 Query	SET character_set_results = NULL
+2016-08-11T18:48:13.938263Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:13.939016Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:13.970745Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.013582Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:14.387964Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.388167Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.413318Z	  126 Query	TRUNCATE TABLE animals
+2016-08-11T18:48:14.419120Z	  126 Query	commit
+2016-08-11T18:48:14.419354Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:14.422443Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.422596Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.436656Z	  126 Query	insert into animals (name, placementDate, sex, shelter_id, species) values ('Sprinkles', '2013-02-11', 'F', null, 'Cat')
+2016-08-11T18:48:14.440539Z	  126 Query	commit
+2016-08-11T18:48:14.440870Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:14.444968Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.446696Z	  126 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:48:14.452840Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:14.455706Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.456170Z	  126 Query	select animal0_.id as id1_0_0_, animal0_.name as name2_0_0_, animal0_.placementDate as placemen3_0_0_, animal0_.sex as sex4_0_0_, animal0_.shelter_id as shelter_6_0_0_, animal0_.species as species5_0_0_, shelter1_.id as id1_2_1_, shelter1_.name as name2_2_1_, shelter1_.opened as opened3_2_1_ from animals animal0_ left outer join shelters shelter1_ on animal0_.shelter_id=shelter1_.id where animal0_.id=1
+2016-08-11T18:48:14.457071Z	  126 Query	SET autocommit=1
+2016-08-11T18:48:14.457277Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.457418Z	  126 Query	SET autocommit=0
+2016-08-11T18:48:14.463470Z	  126 Query	delete from animals where id=1
+2016-08-11T18:48:14.464015Z	  126 Query	commit
+2016-08-11T18:48:14.464349Z	  126 Query	SET autocommit=1

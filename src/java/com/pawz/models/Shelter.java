@@ -2,6 +2,8 @@ package com.pawz.models;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "shelters")
@@ -10,10 +12,12 @@ public class Shelter {
     private int id;
     private String name;
     private Date opendate;
+    private List<Animal> animals;
 
     public Shelter(String name, Date date) {
         this.name = name;
         this.opendate = date;
+        this.animals = new ArrayList<>();
     }
 
     @Id
@@ -38,12 +42,21 @@ public class Shelter {
     }
 
     @Basic
-    @Column(name = "opendate", nullable = false)
+    @Column(name = "opened", nullable = false)
     public Date getOpendate() {
         return opendate;
     }
 
     public void setOpendate(Date opendate) {
         this.opendate = opendate;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "shelter")
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(List<Animal> animals) {
+        this.animals = animals;
     }
 }

@@ -41,7 +41,7 @@ public class ClientTest {
     public void shouldNotCreateNewClientAndSaveNameTooLong() throws Exception {
         Session session =  Mysql.getSession();
         session.beginTransaction();
-        Client c = new Client("Billisnottherealnamebecauseitistoolongtouseinheresoi'mgoingtoaddmorethingsinheretomakeitover45");
+        Client c = new Client("Billisnottherealnamebecauseitistoolongtouseinheresoi'mgoingtoaddmorethingsinheretomakeitover45324234234242343");
         try {
             session.save(c);
             session.getTransaction().commit();
